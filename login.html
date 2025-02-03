@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Delights - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <STYle>
+        body {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    min-height: 100vh;         /* Ensures the body takes at least full viewport height */
+    margin: 0;                 /* Removes default margin */
+}
+    </STYle>
+</head>
+<body>
+
+    <!-- Login Page Content -->
+    <div id="login-page">
+        <!-- Header -->
+        <div class="header">
+            <h1>Baking Delights</h1>
+            <div class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="products.html">Products</a>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="login-action.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Link to Sign Up page -->
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
